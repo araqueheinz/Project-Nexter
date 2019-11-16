@@ -1,0 +1,46 @@
+/*
+  $color-primary: #c69963;
+  $color-primary-dark: #B28451;
+
+  $color-secondary: #101d2c;
+
+  $color-grey-light-1: #f9f7f6;
+  $color-grey-light-2: #aaa;
+
+  $color-grey-dark-1: #54483A;
+  $color-grey-dark-2: #6D5D4B;
+
+  // FONT VARIABLES
+  $font-primary: 'Nunito', sans-serif;
+  $font-display: 'Josefin Sans', sans-serif;
+*/
+
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark{
+    color: $color-grey-dark-1;
+  }
+}
