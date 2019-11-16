@@ -16,6 +16,7 @@
 */
 
 .story {
+
   &__pictures {
     background-color: $color-primary;
 
@@ -28,5 +29,25 @@
 
     //GRID
     grid-column: col-start 5 / full-end; // Check base scss for name references
+    padding: 6rem 8vw;
+    
+    // FLEX to center
+    /*
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    */
+
+    // GRID to center
+    display: grid;
+    align-content: center;
+    justify-items: start;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
