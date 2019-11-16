@@ -17,4 +17,7 @@
 
 .homes {
   background-color: $color-secondary;
+
+  //GRID
+  grid-column: center-start / center-end; // Check base scss for name references
 }

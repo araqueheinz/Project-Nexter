@@ -17,4 +17,8 @@
 
 .features {
   background-color: $color-grey-light-2;
+
+  //GRID
+  grid-column: center-start / center-end; // Check base scss for name references
+
 }

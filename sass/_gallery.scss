@@ -17,4 +17,7 @@
 
 .gallery {
   background-color: $color-grey-dark-1;
+
+  // GRID
+  grid-column: full-start / full-end; // Check base scss for name references
 }

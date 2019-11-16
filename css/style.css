@@ -17,7 +17,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content); }
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .container > * {
+    padding: 40px;
+    font-size: 3rem; }
 
 /*
   $color-primary: #c69963;
@@ -36,7 +40,9 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .sidebar {
-  background-color: #c69963; }
+  background-color: #c69963;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
 
 /*
   $color-primary: #c69963;
@@ -55,7 +61,8 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .header {
-  background-color: #54483A; }
+  background-color: #54483A;
+  grid-column: full-start/col-end 6; }
 
 /*
   $color-primary: #c69963;
@@ -74,7 +81,8 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .realtors {
-  background-color: #101d2c; }
+  background-color: #101d2c;
+  grid-column: col-end 6 / full-end; }
 
 /*
   $color-primary: #c69963;
@@ -93,7 +101,8 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .features {
-  background-color: #aaa; }
+  background-color: #aaa;
+  grid-column: center-start / center-end; }
 
 /*
   $color-primary: #c69963;
@@ -112,10 +121,12 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .story__pictures {
-  background-color: #c69963; }
+  background-color: #c69963;
+  grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: #f9f7f6; }
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / full-end; }
 
 /*
   $color-primary: #c69963;
@@ -134,7 +145,8 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .homes {
-  background-color: #101d2c; }
+  background-color: #101d2c;
+  grid-column: center-start / center-end; }
 
 /*
   $color-primary: #c69963;
@@ -153,7 +165,8 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .gallery {
-  background-color: #54483A; }
+  background-color: #54483A;
+  grid-column: full-start / full-end; }
 
 /*
   $color-primary: #c69963;
@@ -172,4 +185,5 @@ body {
   $font-display: 'Josefin Sans', sans-serif;
 */
 .footer {
-  background-color: #101d2c; }
+  background-color: #101d2c;
+  grid-column: full-start / full-end; }

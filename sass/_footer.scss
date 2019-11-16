@@ -17,4 +17,7 @@
 
 .footer {
   background-color: $color-secondary;
+
+  // GRID
+  grid-column: full-start / full-end; // Check base scss for name references
 }

@@ -16,4 +16,9 @@
 */
 .sidebar {
   background-color: $color-primary;
+
+  // GRID
+  grid-column: sidebar-start / sidebar-end; // Check base scss for name references
+  grid-row: 1 / -1;
+
 }
