@@ -29,7 +29,10 @@
   //GRID INCEPTION
   display: grid;
 
+  // RESPONSIVE WEB DESIGN MINMAX
   grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+
+  // RESPONSIVE WEB DESIGN MINMAX
   grid-template-columns: minmax(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center;
@@ -79,8 +82,11 @@
     align-items: center;
 
     img {
+
+      // RESPONSIVE WEB DESIGN MAX-
       max-height: 2.5rem;
       max-width: 100%;
+
       // Take out the whiteness of the images / logos
       filter: brightness(70%);
     }
